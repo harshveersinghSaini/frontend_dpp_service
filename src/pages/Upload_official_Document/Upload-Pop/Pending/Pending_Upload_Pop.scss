@@ -1,0 +1,139 @@
+@use '../../../../styles/utils/variable.scss' as *;
+
+
+
+.pending-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; 
+}
+
+
+
+
+
+
+.pending-pop {
+  padding: 24px;
+  max-width: 812px;
+  background-color: #fff;
+  border-radius: 12px;
+  text-align: center;
+
+  &__header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .close-btn {
+  position: absolute;
+  top: 0;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #999;
+
+  &:hover {
+    color: #333;
+  }
+}
+
+    img {
+      width: 120px;
+      height: 128px;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+        color: #323232;
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: #727272;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+
+    .status-badge {
+      padding: 6px 12px;
+      background-color: #fff;
+      border: 1px solid #e6a100;
+      color: #e6a100;
+      display: flex;
+      gap: 2px;
+      border-radius: 20px;
+      align-items: center;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .clockicon{
+        width: 16px;
+        height: 16px;
+        margin: 0;
+    }
+  }
+
+  &__requirements {
+    margin: 24px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+
+    .card {
+      padding: 16px;
+      border-radius: 10px;
+      text-align: left;
+      font-size: 14px;
+
+      h4 {
+        font-size: 15px;
+        margin-bottom: 8px;
+      }
+
+      &--error {
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+        border: 1px solid $error;
+        background-color: $primary-color;
+
+        h4{
+            color: $error;
+        }
+        p{
+            color: #727272;
+        }
+      }
+
+      &--success {
+        border: 1px solid #D5D5D5;
+        background-color: #fff;
+
+        h4{
+            color: $sucess;
+        }
+        p{
+            color: #727272;
+        }
+      }
+
+      button {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &__footer {
+    margin-top: 20px;
+  }
+}

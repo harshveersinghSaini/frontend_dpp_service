@@ -1,0 +1,78 @@
+@use "../../styles/utils/variable.scss" as *;
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  justify-content: center;
+  align-items: center;
+  .logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 160px;
+  }
+
+  .login-box {
+    background: $primary-color;
+    padding: 32px 50px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 580px;
+    width: 100%;
+    box-shadow: 6px 6px 54px 0px #0000000d;
+  }
+
+  .login-head {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 12px;
+    color: $text-color;
+  }
+
+  .login-sub {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #727272;
+    margin-bottom: 20px;
+  }
+
+  .input-group {
+    margin-bottom: 1rem;
+  }
+
+  .forgot-password {
+    font-size: 0.85rem;
+    color: $text-color;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .login-btn {
+    width: 100%;
+    height: 56px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
+
+  .signup-link {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #727272;
+
+    .create-account-link {
+      font-weight: 700;
+      font-size: 14px;
+      text-align: center;
+      color: $button-bgcolor;
+    }
+  }
+}

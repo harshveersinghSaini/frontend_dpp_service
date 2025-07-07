@@ -1,0 +1,33 @@
+// abstracts/_mixins.scss
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@mixin flex-row-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@mixin flex-column-align-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+// Usage:
+.box {
+    @include flex-center;
+    height: 100px;
+    background: lightgray;
+}

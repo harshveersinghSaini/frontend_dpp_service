@@ -1,0 +1,22 @@
+@use '../../../styles/utils/variable.scss' as *;
+
+.custom-button {
+  background: #71BF45;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0px 1px 1px 0px #D0CCFF;
+  display: flex;           
+  align-items: center;     
+  justify-content: center; 
+}
+
+.custom-button__icon {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  padding-left: 10px;
+}

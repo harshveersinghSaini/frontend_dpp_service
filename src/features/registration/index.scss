@@ -1,0 +1,187 @@
+@use "../../styles/utils/mixins" as *;
+
+.registration-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 580px;
+  gap: 30px;
+  margin: 0 auto;
+
+  .logo {
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+  }
+
+  .registration-box {
+    padding: 32px 50px;
+    width: 100%;
+    max-width: 576px;
+    min-width: 280px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .reg_head {
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      color: #323232;
+      width: 100%;
+    }
+
+    .reg_para {
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .input-group {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .password-input-checklist {
+      width: 100%;
+      height: auto;
+
+      border: 1px solid #f0f0f0;
+      border-radius: 5px;
+      padding-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      border-radius: 8px;
+      padding: 20px 16px;
+
+      .checklist-content {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 20px;
+        align-items: flex-start;
+        width: 100%;
+
+        div {
+          .checklist-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 5px;
+            align-items: flex-start;
+            font-size: 10px;
+            font-weight: 200;
+          }
+        }
+      }
+    }
+
+    .captcha-container {
+      @include flex-column-align-center;
+      width: 100%;
+      margin-top: 20px;
+      border: 1px solid #f0f0f0;
+      border-radius: 8px;
+      padding: 20px 16px;
+
+      .captcha-heading {
+        width: 100%;
+        margin: auto;
+        font-size: 15px;
+        font-weight: 400;
+        @include flex-start;
+        gap: 5px;
+      }
+
+      .captcha-code-input {
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .captcha-button-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: flex-start;
+        width: 100%;
+
+        .verify {
+          flex: 1;
+          font-size: 16px;
+          font-weight: 400;
+         
+        }
+
+        .new-code {
+          white-space: nowrap;
+          background-color: #f0f0f0;
+          color: #323232;
+          font-weight: 400;
+          flex: 1;
+          font-size: 16px;
+
+        }
+      }
+    }
+
+    .help-text {
+      color: #727272;
+      font-size: 14px;
+      font-weight: 400;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 20px;
+      font-style: italic;
+    }
+
+    .checkbox {
+      margin-top: 20px;
+      color: #777;
+      font-size: 14px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .submit-container {
+      width: 100%;
+      margin-top: 20px;
+
+      button {
+        width: 100%;
+        height: 56px;
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+
+    .login-link {
+      margin-top: 20px;
+      font-weight: 400;
+      font-size: 14px;
+      width: 100%;
+      text-align: center;
+      color: #727272;
+
+      .login-account-link {
+        font-weight: 700;
+        font-size: 14px;
+        color: #71bf45;
+      }
+    }
+  }
+}
