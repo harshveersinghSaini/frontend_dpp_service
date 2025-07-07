@@ -1,0 +1,66 @@
+.common-cards {
+  display: flex;
+  gap: 24px;
+  //   padding: 16px 0;
+
+  .common-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 6px 6px 54px 0px #0000000d;
+    padding: 16px;
+    max-width: 272px;
+    width: 100%;
+
+    .card-icon {
+      border-radius: 50%;
+      font-size: 60px;
+      
+    }
+
+    .card-label {
+      color: #727272;
+      font-size: 14px;
+      margin-bottom: 12px;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .card-value {
+      color: #232323;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0;
+      margin-top: 0;
+    }
+  }
+
+  &.with-icons .common-card {
+    align-items: flex-start;
+    .card-icon {
+      margin-bottom: 18px;
+    }
+    .card-label,
+    .card-value {
+      margin: 0;
+    }
+    .card-label {
+      font-size: 14px;
+      color: #727272;
+      margin-bottom: 12px;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+    .card-value {
+      font-size: 32px;
+      color: #222;
+      font-weight: 700;
+    }
+    .card-label-value {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

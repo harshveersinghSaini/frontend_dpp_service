@@ -3,9 +3,9 @@ export const PUBLIC_PATH = {
   registration: "/signup",
   businessRegistration: "/business-registration",
   uploadDocument: "/upload-official-document",
-
+   dashboard: "/",
 };
 
 export const PRIVATE_PATH = {
-  dashboard: "/",
+  // dashboard: "/",
 };

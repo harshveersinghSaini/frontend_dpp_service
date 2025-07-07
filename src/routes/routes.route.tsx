@@ -1,11 +1,11 @@
-import { PRIVATE_PATH, PUBLIC_PATH } from './routesPath.route';
+import {  PUBLIC_PATH } from './routesPath.route';
 import { Dashboard, Login, Registration } from '@/pages/index';
 import { AuthLayout, MainLayout } from '@/components';
 import UploadDocument  from '@/pages/Upload_official_Document/UploadDocument';
 import BusinessRegistration from '@/pages/Business_Registration/Business_Registration';
 import PublicLayout from '@/components/publicLayout/index';
-const { login, registration, uploadDocument, businessRegistration } = PUBLIC_PATH;
-const { dashboard } = PRIVATE_PATH;
+const { login, registration, uploadDocument, businessRegistration, dashboard } = PUBLIC_PATH;
+// const { dashboard } = PRIVATE_PATH;
 
 export const publicRoutesData = [
   {
@@ -29,12 +29,17 @@ export const publicRoutesData = [
     component: <UploadDocument />,
     layout: PublicLayout,
   },
+    {
+    path: dashboard,
+    component: <Dashboard/>,
+    layout: AuthLayout,
+  },
 ];
 
 export const privateRoutesData = [
-  {
-    path: dashboard,
-    component: <Dashboard />,
-    layout: AuthLayout,
-  },
+  // {
+  //   path: dashboard,
+  //   component: <Dashboard/>,
+  //   layout: AuthLayout,
+  // },
 ];
