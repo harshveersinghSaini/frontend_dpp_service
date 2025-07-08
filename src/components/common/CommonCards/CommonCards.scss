@@ -1,0 +1,56 @@
+@use "../../../styles/utils/variable.scss" as *;
+.common-cards {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 20px;
+
+  .common-card {
+    background: $primary-color;
+    border-radius: 8px;
+    box-shadow: 6px 6px 54px 25px #0000000d;
+    padding: 16px;
+    max-width: 272px;
+    width: 100%;
+
+    .card-label {
+      // color: $color-727272;
+      font-size: $font14;
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+
+    .card-value {
+      // color: $color-232323;
+      font-size: $font20;
+      font-weight: 700;
+      margin-top: 0;
+    }
+  }
+
+  &.with-icons .common-card {
+    align-items: flex-start;
+    .card-icon {
+      margin-bottom: 18px;
+    }
+    .card-label,
+    .card-value {
+      margin: 0;
+    }
+    .card-label {
+      font-size: $font14;
+      // color: $color-727272;
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+    .card-value {
+      // color: $color-232323;
+      font-size: $font20;
+      font-weight: 700;
+      margin-top: 0;
+    }
+    .card-label-value {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

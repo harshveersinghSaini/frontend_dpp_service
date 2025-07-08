@@ -1,0 +1,165 @@
+@use "../../styles/utils/variable.scss" as *;
+.dashboard {
+  // background-color: $color-F8F9FA;
+  width: 100%;
+  padding: 15px;
+  h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: #323232;
+
+  }
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #727272;
+    padding-top: 8px;
+    padding-bottom: 20px;
+  }
+  &_Overview {
+    background-image: url("/Image/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 6px 6px 54px 0px #0000000d;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    &_left {
+      background-color: $primary-color;
+      box-shadow: 6px 6px 54px 0px #0000000d;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 561px;
+      width: 100%;
+      .left_top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h3 {
+          font-weight: 700;
+          font-size: $font17;
+          line-height: 100%;
+          color: #323232;
+        }
+        .ant-dropdown-trigger {
+          border: 1px solid #d5d5d5;
+          border-radius: 8px;
+          padding: 5px 10px;
+          max-width: 79px;
+          width: 100%;
+          .ant-space-item {
+            font-weight: 400;
+            font-size: $font14;
+            line-height: 150%;
+            color: $text-color;
+          }
+        }
+      }
+      .left_middle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 20px;
+        span {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          h3 {
+            font-weight: 500;
+            font-size: $font14;
+            line-height: 100%;
+            // color: $color-727272;
+          }
+          p {
+            font-weight: 700;
+            font-size: $font20;
+            line-height: 100%;
+            color: $text-color;
+          }
+        }
+      }
+      .left_bottom {
+        background: $bg-color;
+        box-shadow: 6px 6px 54px 0px #0000000d;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        gap: 9px;
+        border-radius: 8px;
+        h2 {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          color: $error;
+        }
+      }
+    }
+  }
+  .innerCards {
+    padding-top: 20px;
+    .fund-summary__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      h3 {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 100%;
+        color: #323232;
+      }
+      .dropdowns {
+        display: flex;
+        gap: 10px;
+      }
+    }
+    .ant-dropdown-trigger {
+      border: 0.6px solid var(--Stroke-Gray, #d5d5d5);
+      padding: 8px 16px;
+      border-radius: 8px;
+      .ant-space-item {
+        font-weight: 400;
+        font-size: $font14;
+        line-height: 150%;
+        color: #323232;
+      }
+    }
+  }
+  .Settlement_Progress {
+    padding-top: 17px;
+    &Data {
+      display: flex;
+      justify-content: space-between;
+
+      h2 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        color: #323232;
+        border-bottom: 2px solid #71bf45;
+        width: 1020px;
+        padding-bottom: 10px;
+      }
+      p {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        color: #71bf45;
+        border-bottom: 2px solid #727272;
+        padding-bottom: 10px;
+        width: 130px;
+        text-align: end;
+      }
+    }
+    .progress_report {
+      padding-top: 25px;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import { PRIVATE_PATH, PUBLIC_PATH } from './routesPath.route';
+import {  PUBLIC_PATH } from './routesPath.route';
 import { Dashboard, Login, Registration } from '@/pages/index';
 import { AuthLayout, MainLayout } from '@/components';
 import UploadDocument  from '@/pages/Upload_official_Document/UploadDocument';
@@ -32,7 +32,7 @@ export const publicRoutesData = [
 
   {
     path: dashboard,
-    component: <Dashboard />,
+    component: <Dashboard/>,
     layout: AuthLayout,
   },
 ];
