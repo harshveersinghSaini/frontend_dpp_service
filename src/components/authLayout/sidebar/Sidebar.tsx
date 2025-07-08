@@ -1,5 +1,5 @@
-import React from 'react';
-import { Layout, Menu } from 'antd';
+import React, { useState } from 'react';
+import { Layout, Menu, theme } from 'antd';
 import { useLocation, useNavigate } from 'react-router-dom';
 import '../../../styles/authLayout/_sidebar.scss';
 
@@ -116,8 +116,17 @@ const Sidebar: React.FC = () => {
     },
   ];
 
+
+  const [collapsed, setCollapsed] = useState(false);
+  const {
+
+  } = theme.useToken();
+ 
+  
   return (
-    <Sider width={220} className="custom-sidebar">
+    <Sider collapsible collapsed={collapsed} onCollapse={value => setCollapsed(value)} className="custom-sidebar"
+
+    >
       <Menu
         mode="inline"
         items={items}
