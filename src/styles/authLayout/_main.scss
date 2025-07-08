@@ -1,29 +1,32 @@
 @use './header';
-
+@use './sidebar';
+@use '../utils/variable' as *;
 .auth-layout {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-// Main Content
-.auth-main {
-    flex: 1;
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    box-sizing: border-box;
+.auth-body {
+  display: flex;
+  flex: 1;
+}
 
-    @media (max-width: 768px) {
-        padding: 20px 15px;
-    }
+.auth-main {
+  flex: 1;
+  padding: 20px;
+  background-color: #f8f9f8;
+  overflow-y: auto;
+
+  @media (max-width: 768px) {
+      padding: 20px 15px;
+  }
 }
 
 // Footer Styles
 .auth-footer {
     background: #2c3e50;
-    color: white;
+    color: $primary-color;
     margin-top: auto;
 
     .footer-container {
@@ -136,13 +139,13 @@
 }
 
 // Dark mode support
-@media (prefers-color-scheme: dark) {
-    .auth-layout {
-        background-color: #1a1a1a;
-        color: #ffffff;
-    }
+// @media (prefers-color-scheme: dark) {
+//     .auth-layout {
+//         background-color: #1a1a1a;
+//         color: #ffffff;
+//     }
 
-    .auth-main {
-        background-color: #1a1a1a;
-    }
-}
+//     .auth-main {
+//         background-color: #1a1a1a;
+//     }
+// }

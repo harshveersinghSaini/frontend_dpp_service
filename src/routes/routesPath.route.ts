@@ -6,5 +6,5 @@ export const PUBLIC_PATH = {
 };
 
 export const PRIVATE_PATH = {
-  dashboard: "/",
+  // dashboard: "/",
 };
