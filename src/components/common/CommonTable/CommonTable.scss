@@ -1,0 +1,113 @@
+@use "../../../styles/utils/variable.scss" as *;
+
+.common-table {
+    background-color: $bg-color;
+    padding: 20px;
+    border-radius: 12px;
+
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: $text-color;
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+
+        .common-table__actions-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .common-table__search {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 250px;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 8px 16px;
+            background-color: $primary-color;
+            color: $text-color;
+            font-weight: 500;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 0.6px solid #d5d5d5;
+
+            &.export {
+                background-color: #71bf45;
+                color: white;
+            }
+
+            &:not(:last-child) {
+                margin-right: 12px;
+            }
+        }
+    }
+    .view {
+        padding: 6px 12px;
+        border-radius: 6px;
+        border: 0.6px solid #d5d5d5;
+        background-color: #f8f9fa;
+        color: $text-color;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    // Ant Design Table overrides
+    .custom-ant-table {
+        .ant-table {
+            background: transparent;
+
+            .ant-table-thead > tr > th {
+                background-color: $primary-color;
+                font-weight: 400;
+                font-size: 14px;
+                color: $grey-text;
+                padding: 12px;
+            }
+
+            .ant-table-tbody > tr > td {
+                font-size: 14px;
+                color: #333;
+                padding: 12px;
+
+                &:first-child {
+                    font-weight: 700;
+                }
+            }
+        }
+
+.ant-pagination {
+  margin-top: 20px;
+  justify-content: end;
+
+  .ant-pagination-item {
+    background-color: transparent;
+    border: none;
+
+    a {
+      color: $text-color; 
+    }
+  }
+
+  .ant-pagination-item-active {
+    background-color: $button-bgcolor;
+    border: 1px solid #D5D5D5;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+    }
+}

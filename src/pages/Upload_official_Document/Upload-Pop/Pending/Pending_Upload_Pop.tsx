@@ -11,9 +11,12 @@ const PendingUploadPop: React.FC<Props> = ({ onClose }) => {
   return (
     <div className="pending-overlay">
       <div className="pending-pop">
+        {/* Close Button */}
+        <div className="close-btn-container">
+          <button className="close-btn" onClick={onClose}>×</button>
+        </div>
         {/* Header Section */}
         <div className="pending-pop__header">
-          <button className="close-btn" onClick={onClose}>×</button>
           <img src={warningIcon} alt="Pending Icon" />
           <h2>Pending!</h2>
           <p>Your account setup is almost complete—submit documents at your convenience.</p>
@@ -22,6 +25,7 @@ const PendingUploadPop: React.FC<Props> = ({ onClose }) => {
 
         {/* Requirements */}
         <div className="pending-pop__requirements">
+          <h2 className="requirements-title">Requirements</h2>
           <div className="card card--error">
             <h4>❌ Missing: Updated License Certificate</h4>
             <p>Your license certificate has expired. Please upload an updated version.</p>
