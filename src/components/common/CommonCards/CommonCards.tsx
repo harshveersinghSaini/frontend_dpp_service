@@ -1,20 +1,6 @@
 import React from "react";
 import "./CommonCards.scss";
-
-type CardData = {
-  label: string;
-  value: string;
-  // icon?: React.ReactNode;
-  icon?: string; // change here 
-  className?: string;
-};
-
-type CommonCardsProps = {
-  cards: CardData[];
-  withIcons?: boolean;
-  style?: React.CSSProperties;
-  className?: string;
-};
+import type { CommonCardsProps } from "@/Interfaces/Interfaces";
 
 const CommonCards: React.FC<CommonCardsProps> = ({
   cards,
@@ -30,9 +16,11 @@ const CommonCards: React.FC<CommonCardsProps> = ({
   >
     {cards.map((card, idx) => (
       <div className="common-card" key={idx}>
-        {/* {withIcons && card.icon && <div className="card-icon">{card.icon}</div>} */}
-        {/* change in down line  */}
-        {withIcons && card.icon && ( <div className="card-icon"><img src={card.icon}/></div>)}  
+        {withIcons && card.icon && (
+          <div className="card-icon">
+            <img src={card.icon} />
+          </div>
+        )}
         <div className="card-label">{card.label}</div>
         <div className="card-value">{card.value}</div>
       </div>

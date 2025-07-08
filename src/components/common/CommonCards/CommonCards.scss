@@ -1,37 +1,28 @@
+@use "../../../styles/utils/variable.scss" as *;
 .common-cards {
   display: flex;
   gap: 24px;
-  //   padding: 16px 0;
+  padding-bottom: 20px;
 
   .common-card {
-    background: #ffffff;
+    background: $primary-color;
     border-radius: 8px;
-    box-shadow: 6px 6px 54px 0px #0000000d;
+    box-shadow: 6px 6px 54px 25px #0000000d;
     padding: 16px;
     max-width: 272px;
     width: 100%;
 
-    .card-icon {
-      border-radius: 50%;
-      font-size: 60px;
-      
-    }
-
     .card-label {
-      color: #727272;
-      font-size: 14px;
+      color: $color-727272;
+      font-size: $font14;
       margin-bottom: 12px;
       font-weight: 500;
-      line-height: 1;
-      letter-spacing: 0;
     }
 
     .card-value {
-      color: #232323;
-      font-size: 20px;
+      color: $color-232323;
+      font-size: $font20;
       font-weight: 700;
-      line-height: 1;
-      letter-spacing: 0;
       margin-top: 0;
     }
   }
@@ -46,17 +37,16 @@
       margin: 0;
     }
     .card-label {
-      font-size: 14px;
-      color: #727272;
+      font-size: $font14;
+      color: $color-727272;
       margin-bottom: 12px;
       font-weight: 500;
-      line-height: 1;
-      letter-spacing: 0;
     }
     .card-value {
-      font-size: 32px;
-      color: #222;
+      color: $color-232323;
+      font-size: $font20;
       font-weight: 700;
+      margin-top: 0;
     }
     .card-label-value {
       display: flex;

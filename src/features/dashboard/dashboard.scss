@@ -3,18 +3,20 @@
   background-color: $color-F8F9FA;
   width: 100%;
   padding: 15px;
-  h2{
-font-weight: 700;
-font-size: 24px;
-line-height: 100%;
-color: #323232;
+  h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: #323232;
+
   }
-  p{
-font-weight: 400;
-font-size: 14px;
-line-height: 100%;
-color: #727272;
-padding-top: 8px;
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #727272;
+    padding-top: 8px;
+    padding-bottom: 20px;
   }
   &_Overview {
     background-image: url("/Image/bg.png");
@@ -135,7 +137,6 @@ padding-top: 8px;
     &Data {
       display: flex;
       justify-content: space-between;
-      align-items: center;
 
       h2 {
         font-weight: 700;

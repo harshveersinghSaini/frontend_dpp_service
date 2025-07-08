@@ -10,4 +10,16 @@ export interface CustomButtonProps {
   icon?: React.ReactNode;
 }
 
+export interface CardData {
+  label: string;
+  value: string;
+  icon?: string;
+  className?: string;
+}
 
+export interface CommonCardsProps {
+  cards: CardData[];
+  withIcons?: boolean;
+  style?: React.CSSProperties;
+  className?: string;
+}
