@@ -1,85 +1,89 @@
 @use "../utils/variable.scss" as *;
 
+
 .custom-sidebar {
-    background-color: $primary-color;
-    height: 859px;
+  background-color: $primary-color;
+  height: 859px;
 
-    .sidebar-menu {
-        font-size: 14px;
-        font-weight: 500;
-        padding-top: 20px;
-        color: $text-color;
+  .sidebar-menu {
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 20px;
+    color: $text-color;
 
-        .sidebar-icon {
-            width: 24px;
-            height: 24px;
-            margin-right: 13.5px;
-            object-fit: contain;
-        }
+    // Menu Item Styles
+    .ant-menu-item {
+      height: 47.97px;
+      width: 100%;
+      margin: 0 0 8px 0;
+      border-radius: 0px;
+      color: $text-color-secondary;
 
-        .ant-menu-item {
-            height: 47.97px;
-            width: 100%;
-            margin-bottom: 8px;
-            margin-left: 0;
-            border-radius: 0px;
-            color: $text-color-secondary;
-        }
-
-        .ant-menu-submenu-title {
-            border-radius: 0px;
-            height: 47.97px;
-        }
-
-        .ant-menu-title-content {
-            white-space: normal;
-            overflow: visible;
-            text-overflow: unset;
-            line-height: 18px;
-            color: $text-color-secondary;
-        }
-
-        .sidebar-Dropdown-label {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            color: $text-color-secondary;
-
-            .sidebar-icon {
-                margin-right: 10px;
-            }
-        }
-
-        .ant-menu-item-selected {
-            font-weight: 700;
-            background: linear-gradient(90deg, rgba(113, 191, 69, 0.2) 0%, rgba(251, 251, 251, 0.2) 100%);
-
-            .active-dot {
-                height: 8px;
-                width: 8px;
-                background-color: $sucess;
-                border-radius: 50%;
-                display: inline-block;
-                margin-right: 10px;
-            }
-        }
-
-        .inactive-dot {
-            height: 8px;
-            width: 8px;
-            background-color: $bg-color-secondary;
-            border-radius: 50%;
-            display: inline-block;
-            margin-right: 10px;
-        }
-
-        .ant-menu-sub {
-            font-weight: normal;
-        }
-
-        .ant-menu-item:hover {
-            color: $sucess;
-        }
+      &:hover {
+        color: $sucess;
+      }
     }
+
+    .ant-menu-submenu-title {
+      height: 47.97px;
+      border-radius: 0px;
+    }
+
+    .ant-menu-title-content {
+      white-space: normal;
+      overflow: visible;
+      text-overflow: unset;
+      line-height: 18px;
+      color: $text-color-secondary;
+    }
+
+    // Selected Item
+    .ant-menu-item-selected {
+      font-weight: 700;
+      background: linear-gradient(90deg, rgba(113, 191, 69, 0.2) 0%, rgba(251, 251, 251, 0.2) 100%);
+
+      .active-dot {
+        height: 8px;
+        width: 8px;
+        background-color: $sucess;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+
+    .inactive-dot {
+      height: 8px;
+      width: 8px;
+      background-color: $bg-color-secondary;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    // Sidebar Dropdown Label
+    .sidebar-Dropdown-label {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      color: $text-color-secondary;
+
+      .sidebar-icon {
+        margin-right: 10px;
+      }
+    }
+
+    // Icon Style
+    .sidebar-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 13.5px;
+      object-fit: contain;
+    }
+
+    .ant-menu-sub {
+      font-weight: normal;
+    }
+  }
 }
